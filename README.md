@@ -1,4 +1,8 @@
-# jupyterlab_spellchecker
+# jupyterlab_spellchecker_fr
+
+<div class="alert alert-warning"
+I needed a spell checker for French so I forked https://github.com/ijmbarr/jupyterlab_spellchecker and modified 3 lines (4 if you count the color). 
+</div> 
 
 A JupyterLab extension highlighting misspelled words in markdown cells within notebooks.
 
@@ -12,6 +16,8 @@ The extension currently only use the `en_US` dictionary loaded from the [jsdeliv
 The extension has been tested up to JupyterLab version 2.0.0.
 
 ## Installation
+
+=> to be updated if it works
 
 ```bash
 jupyter labextension install @ijmbarr/jupyterlab_spellchecker
