@@ -36,9 +36,12 @@ class SpellChecker {
 
     // Default Options
     check_spelling: boolean = true;
-    aff_url: string = 'https://cdn.jsdelivr.net/codemirror.spell-checker/latest/en_US.aff';
-    dict_url: string = 'https://cdn.jsdelivr.net/codemirror.spell-checker/latest/en_US.dic';
-    lang_code: string = "en_Us";
+    // aff_url: string = 'https://cdn.jsdelivr.net/codemirror.spell-checker/latest/en_US.aff';
+    // dict_url: string = 'https://cdn.jsdelivr.net/codemirror.spell-checker/latest/en_US.dic';
+    // lang_code: string = "en_Us";
+    aff_url: string = 'https://raw.githubusercontent.com/superbob/SublimeTextLanguageFrench/master/fr_FR%20(1990%20reform).aff';
+    dict_url: string = 'https://raw.githubusercontent.com/superbob/SublimeTextLanguageFrench/master/fr_FR%20(1990%20reform).dic';
+    lang_code: string = "fr_FR";
     rx_word_char: RegExp     = /[^-\[\]{}():\/!;&@$£%§<>"*+=?.,~\\^|_`#±\s\t]/;
     rx_non_word_char: RegExp =  /[-\[\]{}():\/!;&@$£%§<>"*+=?.,~\\^|_`#±\s\t]/;
     accepted_types = [
@@ -167,7 +170,7 @@ function activate(app: JupyterFrontEnd, tracker: INotebookTracker, palette: ICom
  * Initialization data for the jupyterlab_spellchecker extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-    id: 'jupyterlab_spellchecker',
+    id: 'jupyterlab_spellchecker_fr',
     autoStart: true,
     requires: [INotebookTracker, ICommandPalette, IEditorTracker],
     activate: activate
